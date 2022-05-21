@@ -1,0 +1,12 @@
+.advertising,
+.header-main,
+.section-main,
+.product-container,
+.footer-main{
+    background-color: aquamarine;
+}
+
+.grid-container{
+    margin: 0px auto;
+    width: 100%;
+}
