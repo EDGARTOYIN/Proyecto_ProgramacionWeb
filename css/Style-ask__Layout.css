@@ -1,0 +1,29 @@
+
+
+.grid-container{
+    margin: 0px auto;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                            "header-main"
+                            "background-P"
+                            "main-section"
+                            "footer-main";
+    gap: 0px;
+}
+
+
+
+.grid-container .header-main{
+    grid-area: header-main;
+}
+.grid-container .background-P{
+    grid-area: background-P;
+}
+.grid-container .main-section{
+    grid-area: main-section;
+}
+.grid-container .footer-main{
+    grid-area: footer-main;
+}
