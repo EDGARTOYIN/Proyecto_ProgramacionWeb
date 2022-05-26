@@ -1,12 +1,33 @@
-.advertising,
-.header-main,
-.section-main,
-.product-container,
-.footer-main{
-    background-color: aquamarine;
-}
+
 
 .grid-container{
     margin: 0px auto;
-    width: 100%;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:   "advertising"
+                            "header-main"
+                            "section-main"
+                            "product-container"
+                            "footer-main";
+    gap: 15px;
+}
+
+
+.grid-container .advertising{
+    grid-area: advertising;
+}
+.grid-container .header-main{
+    grid-area: header-main;
+}
+.grid-container .section-main{
+    width: 99%;
+    margin: 0px auto;
+    grid-area: section-main;
+}
+.grid-container .product-container{
+    grid-area: product-container;
+}
+.grid-container .footer-main{
+    grid-area: footer-main;
 }

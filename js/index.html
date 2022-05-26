@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,27 +7,220 @@
     <link rel="stylesheet" href="/Proyecto_progWeb/css/style.css" />
     <link rel="stylesheet" href="/Proyecto_progWeb/css/style__layout.css" />
     <title>ONLINE COURSES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="grid-contai ner">
+    <div class="grid-container">
       <header class="advertising">
-        <h1>
+        <h1 class="advertising-title">
           SUSCRIBASE POR TIEMPO LIMITADO A PREMIUM POR EL PRECIO DE SOLO 200$
           PESOS
         </h1>
 
         <div class="timer">
-          <div class="container-day"><h3 class="day">Time</h3></div>
-          <div class="container-hour"><h3 class="hour">Time</h3></div>
-          <div class="container-minutes"><h3 class="minutes">Time</h3></div>
-          <div class="container-seconds"><h3 class="seconds">Time</h3></div>
+          <div class="container-day item"><h3 class="day">Time</h3></div>
+          <div class="container-hour item"><h3 class="hour">Time</h3></div>
+          <div class="container-minutes item">
+            <h3 class="minutes">Time</h3>
+          </div>
+          <div class="container-seconds item">
+            <h3 class="seconds">Time</h3>
+          </div>
+          <div class="close-container item">x</div>
         </div>
       </header>
-      <header class="header-main"><h1>Header</h1></header>
-      <section class="section-main"><h1>Main Section</h1></section>
-      <main class="product-container"><h1>Main</h1></main>
-      <footer class="footer-main"><h1>Footer</h1></footer>
+
+      <header class="header-main">
+        <div class="sub-header">
+          <div class="logo-container">
+            <h1 class="__logo">EDGARTOYINS</h1>
+          </div>
+
+          <nav class="lista-container menu">
+            <ul class="lista">
+              <li class="item"><a href="#">Courses</a></li>
+              <!-- pendiente a cambiar -->
+              <li class="item">More</li>
+            </ul>
+          </nav>
+
+          <nav class="lista-container user">
+            <ul class="lista">
+              <li class="item">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </li>
+              <li class="item"><input class="buscador" type="text" /></li>
+              <li class="item">Log in</li>
+              <li class="item">Sing up</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="section-main background-index">
+        <div class="imag"></div>
+        <div class="container-title">
+          <h1 class="main-title">
+            <a href="index.html">DESAFIA TU POTENCIAL</a>
+          </h1>
+          <h5 class="sub-title">
+            <a href="index.html">CURSOS A 50% DE DESCUENTO</a>
+          </h5>
+        </div>
+      </section>
+
+      <main class="product-container">
+        <div class="courses-container">
+
+          <article class="card" id="C-progaming">
+            <div class="card__content">
+              <h3 class="card__title">CURSO DE PROGRAMACION</h3>
+              <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+              <p class="card__description">
+                Curso de programacion con los mejores temas para aprender
+              </p>
+              <button class="btton">Comprar ahora</button>
+            </div>
+          </article>
+
+          <article class="card" id="C-unity"">
+            <div class="card__content">
+              <h3 class="card__title">CURSO DE UNITY</h3>
+              <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+              <p class="card__description">
+                Curso de Unity con los mejores temas para aprender
+              </p>
+              <button class="btton">Comprar ahora</button>
+            </div>
+          </article>
+
+          <article class="card" id="C-linux">
+            <div class="card__content">
+              <h3 class="card__title">CURSO DE LINUX</h3>
+              <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+              <p class="card__description">
+                Curso de Linux con los mejores temas para aprender
+              </p>
+              <button class="btton">Comprar ahora</button>
+            </div>
+          </article>
+
+          <article class="card" id="C-photoshop">
+            <div class="card__content">
+              <h3 class="card__title">CURSO DE PHOTOSHOP</h3>
+              <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+              <p class="card__description">
+                Curso de photoshop con los mejores temas para aprender
+              </p>
+              <button class="btton">Comprar ahora</button>
+            </div>
+          </article>
+
+
+          <article class="card" id="C-Csharp">
+            <div class="card__content">
+              <h3 class="card__title">CURSO DE C#</h3>
+              <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+              <p class="card__description">
+                Curso de photoshop con los mejores temas para aprender
+              </p>
+              <button class="btton">Comprar ahora</button>
+            </div>
+          </article>
+
+
+
+          <article class="card" id="C-javaScript">
+            <div class="card__content">
+              <h3 class="card__title">CURSO DE JAVASCRIPT</h3>
+              <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+              <p class="card__description">
+                Curso de JavaScript con los mejores temas para aprender
+              </p>
+              <button class="btton">Comprar ahora</button>
+            </div>
+          </article>
+
+
+
+            <article class="card" id="C-html_css">
+              <div class="card__content">
+                <h3 class="card__title">CURSO DE HTML Y CSS</h3>
+                <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+                <p class="card__description">
+                  Curso de HTML Y CSS con los mejores temas para aprender
+                </p>
+                <button class="btton">Comprar ahora</button>
+              </div>
+            </article>
+
+
+
+            <article class="card" id="C-Css">
+                <div class="card__content">
+                  <h3 class="card__title">CURSO DE CSS </h3>
+                  <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+                  <p class="card__description">
+                    Curso de JavaScript con los mejores temas para aprender
+                  </p>
+                  <button class="btton">Comprar ahora</button>
+                </div>
+            </article>
+
+
+                <article class="card" id="C-unreal">
+                  <div class="card__content">
+                    <h3 class="card__title">CURSO DE UNREAL ENGINE</h3>
+                    <span class="card_subtitle"> PRECIO: 150$<span class="discount" >300$</span></span>
+                    <p class="card__description">
+                      Curso de unreal engine con los mejores temas para aprender
+                    </p>
+                    <button class="btton">Comprar ahora</button>
+                  </div>
+                </article>
+
+
+        </div>
+      </main>
+
+      <footer class="footer-main">
+        
+        <nav class="lista-footer">
+          <h3 class="title-lista">Atencion al cliente</h3>
+          <ul class="lista">
+            <li class="item">686-000-00</li>
+            <li class="item">Centro de ayuda</li>
+            <li class="item">Devolver un producto</li>
+            <li class="item">Privacidad y seguridad</li>
+          </ul>
+        </nav>
+
+        <nav class="lista-footer">
+          <h3 class="title-lista">Informacion sobre la empresa</h3>
+          <ul class="lista">
+            <li class="item">sobre EDGARTOYIN's</li>
+            <li class="item">inversores</li>
+            <li class="item">Horas y locaciones</li>
+            <li class="item">calificacion</li>
+          </ul>
+        </nav>
+
+        <nav class="lista-footer">
+          <h3 class="title-lista">Mi cuenta</h3>
+          <ul class="lista">
+            <li class="item"><a href="#"></a>Iniciar/Registrarse</li>
+            <li class="item"><a href="#"></a>Historial de compras</li>
+            <li class="item"><a href="#"></a>Lista de deseos</li>
+            <li class="item"><a href="#"></a>Notificaciones</li>
+          </ul>
+        </nav>
+      </footer>
+      
     </div>
+
     <script src="/Proyecto_progWeb/js/script_countD.js"></script>
   </body>
 </html>

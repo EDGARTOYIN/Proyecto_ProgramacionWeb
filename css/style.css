@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+/** advertising **/
+
+.advertising{
+    display: flex;  
+    align-items: center;
+}
+
+.advertising .timer{
+    margin-left: auto;
+    display: flex;
+
+}
+
+.advertising .timer .item{
+    padding: 20px;
+}
+/**  **/
+
+
+
+/** header main **/
+
+.header-main .sub-header{
+    width: 98%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.header-main .sub-header .logo-container{
+
+    padding: 20px;  
+
+}
+
+
+.header-main .sub-header .lista-container{
+    padding: 10px;
+}
+
+.menu{
+    margin-left: 30px;
+}
+
+.user{
+    margin-left: auto;
+}
+
+.lista-container .lista{
+    display: flex;
+    list-style-type:none;
+}
+
+.lista-container .lista .item{
+    padding: 40px;
+}
+
+/**  **/
+
+
+/** Background index*/
+
+.background-index{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    min-height: 700px;
+}
+
+.background-index .imag{   
+    margin: auto 0px;
+    height: 650px;
+    width: 75%;
+    background:
+    linear-gradient(240deg,rgba(0, 0, 0, .900) 31% ,
+    rgba(228, 228, 228, .0) 10%) 
+    , url(/Proyecto_progWeb/img/index-bacground.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+ .container-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    margin-left: auto;
+    font-size: 36px;
+
+}
+
+
+.container-title .main-title , .sub-title{
+    color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+/**  **/
+
+
+/** Main section, productos*/
+.product-container{
+    background-color: gray;
+}
+.courses-container{
+
+   
+    width: 80%;
+    padding: 100px 0px;
+    background-color: #ffff;
+    margin: 100px auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    row-gap: 100px;
+
+}
+
+
+.card {
+
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #a18a96;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 15px 3px;
+
+
+}
+
+#C-progaming{
+    background: url(/Proyecto_progWeb/img//programacioncourse.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-unity{
+    background: url(/Proyecto_progWeb/img//Curso\ de\ unity.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-linux{
+    background: url(/Proyecto_progWeb/img/Curso_de_linux.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-photoshop{
+    background: url(/Proyecto_progWeb/img/Curso_de_Photoshop.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-Csharp{
+    background: url(/Proyecto_progWeb/img/Curso_de_csharp.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+#C-javaScript{
+    background: url(/Proyecto_progWeb/img/Curso_javascript.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+#C-html_css{
+    background: url(/Proyecto_progWeb/img/Curso_html_css.png)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+
+#C-Css{
+    background: url(/Proyecto_progWeb/img/Curso_de_cssAvanzado.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+#C-unreal{
+    background: url(/Proyecto_progWeb/img/Curso_de_Unreal.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+
+
+.card__content{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: trasform .25s;
+}
+
+.card__content::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #fff;
+}
+.card__title{
+    color: #6A515E;
+    line-height: 15px;
+}
+
+.card_subtitle{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    width: fit-content;
+    font-weight: 900;
+
+}
+
+.card_subtitle .discount{
+    text-decoration: line-through;
+    color: red;
+    padding-left: 15px;
+}
+
+.card__description{
+    font-size: 14px;
+    opacity: 0;
+    padding: 20px;
+    transition: opacity .5s;
+
+}
+
+.btton{
+    margin-left: 60px;
+}
+
+
+.card:hover .card__content{
+    transform: translateY(0);
+
+}
+.card:hover .card__description{
+    opacity: 1;
+    transition-delay: .10s;
+}
+
+/** **/
+
+
+/** footer main **/
+
+.footer-main{
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.footer-main .lista-footer{
+    margin: 0px 10px;
+}
+
+.footer-main .lista-footer .lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-main .lista .item{
+    padding: 6px;
+    font-size: 14px;
+}
+
+
+/** **/
