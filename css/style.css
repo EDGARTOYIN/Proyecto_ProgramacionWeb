@@ -3,47 +3,90 @@
     margin: 0;
 }
 
-a, a:visited, a:hover, a:active {
+a, a:visited, a:active {
     text-decoration: none;
     color: inherit;
+    
   }
+
+a:hover{
+    text-decoration: underline;
+}
 
 /** advertising **/
 
 .advertising{
+    padding: 10px 5px;
     display: flex;  
     align-items: center;
+    cursor: pointer;
+    background-color: rgba(232,91,40,.900);
+
 }
 
-.advertising .timer{
-    margin-left: auto;
-    display: flex;
+.advertising-title{
+    margin: 0px auto;
+    font-size: 19px;
 
+}
+
+.timer{
+    margin-left: auto;
+
+}
+
+.countDown{
+    display: flex;
+    justify-content: space-around;
+}
+
+.day,
+.hour,
+.minutes,
+.seconds{
+    font-size: 19px;
 }
 
 .advertising .timer .item{
-    padding: 20px;
+    padding: 10px;
+   
 }
+
+.advertising .close-container{
+    margin: 0px 15px;
+    padding: 0px 30px;
+}
+
+
+
 /**  **/
 
 
 
 /** header main **/
 
+.header-main{
+    background-color: #0d0d0d;
+}
+
 .header-main .sub-header{
     width: 98%;
     margin: 0px auto;
     display: flex;
     align-items: center;
+    color: white;
 }
 
+.__logo{
+
+    font-size: 50px;
+}
 
 .header-main .sub-header .logo-container{
 
     padding: 20px;  
 
 }
-
 
 .header-main .sub-header .lista-container{
     padding: 10px;
@@ -138,7 +181,7 @@ a, a:visited, a:hover, a:active {
 .card {
 
     position: relative;
-    width: 250px;
+    width: 300px;
     height: 250px;
     color: #a18a96;
     overflow: hidden;
@@ -309,5 +352,28 @@ a, a:visited, a:hover, a:active {
     font-size: 14px;
 }
 
+
+.lista-footer .social-media{
+    display: flex;
+}
+
+.lista-footer .social-media .item {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: thin solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media .item>a {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /** **/
