@@ -20,17 +20,18 @@ a:hover{
 /** advertising **/
 
 .advertising{
+    
     padding: 10px 5px;
     display: flex;  
     align-items: center;
     cursor: pointer;
     background-color: rgba(232,91,40,.900);
-
+    color: #0E0C0a;
 }
 
 .advertising-title{
     margin: 0px auto;
-    font-size: 19px;
+    font-size: 17px;
 
 }
 
@@ -85,6 +86,10 @@ a:hover{
     color: white;
 }
 
+.logo-container>a{
+    text-decoration:none;
+}
+
 .__logo{
 
     font-size: 50px;
@@ -104,8 +109,60 @@ a:hover{
     margin-left: 30px;
 }
 
+ .menu .lista .item{
+    position: relative;
+}
+
+.item .drop{
+    position: absolute;
+    top:4rem;   
+    left: -34.5rem;
+    background-color: gray;
+    width: 100vw;
+    min-height: 190px;
+    z-index: 10;
+
+}
+
+
 .user{
     margin-left: auto;
+}
+
+
+.user #cart{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.user .buscador{
+
+    border-radius: 30px;
+    outline: none;
+
+}
+
+.user #cart , .buscador, #button{
+
+    padding: calc(.500rem - 1px) calc(1.5rem - 1px);
+
+}
+
+
+.user .lista #button{
+    display: block;
+    border: 1px solid transparent;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    border-radius: .25rem;
+    text-decoration: none;
+    transition: all 250ms;
+    width: auto;
+    cursor: pointer;
+    line-height: 1.25;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+
 }
 
 .lista-container .lista{
@@ -114,7 +171,7 @@ a:hover{
 }
 
 .lista-container .lista .item{
-    padding: 40px;
+    padding: 20px;
 }
 
 /**  **/
@@ -170,13 +227,22 @@ a:hover{
 .product-container{
     background-color: #f2f2f2;
 }
+
+
+
+.__title{
+    font-size: 2.2rem;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
 .courses-container{
 
    
     width: 80%;
     padding: 100px 0px;
     background-color: #ffff;
-    margin: 100px auto;
+    margin: 50px auto;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);

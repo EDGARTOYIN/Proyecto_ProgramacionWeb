@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/Proyecto_progWeb/css/style.css" />
     <link rel="stylesheet" href="/Proyecto_progWeb/css/style__layout.css" />
-    <title>ONLINE COURSES</title>
+    <title>Amala network</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -52,25 +52,39 @@
       <header class="header-main">
         <div class="sub-header">
           <div class="logo-container">
-            <h1 class="__logo"><i>Amala Network</i></h1>
+           <a href="index.html"><h1 class="__logo"><i>Amala Network</i></h1></a>
           </div>
 
           <nav class="lista-container menu">
             <ul class="lista">
               <li class="item"><a href="#">Courses</a></li>
               <!-- pendiente a cambiar -->
-              <li class="item">More</li>
+              <li class="item">More 
+                    <div class="drop">
+                      <ul >    
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Sobre Amala</a></li>
+                      </ul>
+                      
+                      <ul>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Unete</a></li>
+                      </ul>
+                    </div>
+              </li>
             </ul>
           </nav>
 
           <nav class="lista-container user">
             <ul class="lista">
               <li class="item">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
               </li>
               <li class="item"><input class="buscador" type="text" /></li>
-              <li class="item">Log in</li>
-              <li class="item">Sing up</li>
+              <li class="item"><button id="button">Log in</button></li>
+              <li class="item"><button id="button">Sing up</button></li>
             </ul>
           </nav>
         </div>
@@ -89,6 +103,9 @@
       </section>
 
       <main class="product-container">
+
+        <div class="title_container"><h1 class="__title">Cursos disponibles</h1></div>
+
         <div class="courses-container">
 
           <article class="card" id="C-progaming">
