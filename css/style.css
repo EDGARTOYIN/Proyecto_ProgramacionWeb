@@ -9,9 +9,7 @@ a, a:visited, a:active {
     
   }
 
-a:hover{
-    text-decoration: underline;
-}
+
 
 .advertising,.header-main,.product-container,.footer-main{
     font-family: 'Roboto', sans-serif;
@@ -111,17 +109,56 @@ a:hover{
 
  .menu .lista .item{
     position: relative;
+    transition: opacity 400ms ease-in-out;
 }
 
+
+.menu .lista .item:hover{
+    
+    color: #b4ebff;
+}
+
+#more:hover>.drop , #more:focus>.drop{
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .item .drop{
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;  
     position: absolute;
-    top:4rem;   
-    left: -34.5rem;
-    background-color: gray;
+    top:3.3rem;   
+    left: -34.9rem;
+    background-color:#0d0d0d;
     width: 100vw;
     min-height: 190px;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
+}
+
+
+.drop .lista-drop{
+ 
+    list-style: none;
+}
+
+.drop .lista-drop .item-drop{
+    padding: 0.5rem 1rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.item-drop:hover, .item-drop:focus{
+    background-color: #b4ebff;
+}
+
+.drop-title{
+    font-size: 35px;
 }
 
 
@@ -133,6 +170,13 @@ a:hover{
 .user #cart{
     font-size: 24px;
     cursor: pointer;
+    transition: background-color 200ms ease-in;
+
+}
+
+.user #cart:hover{
+
+    background-color: #222021;
 }
 
 .user .buscador{
@@ -255,8 +299,8 @@ a:hover{
 .card {
 
     position: relative;
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     color: #a18a96;
     overflow: hidden;
     border-radius: 20px;
