@@ -1,0 +1,96 @@
+
+/** Basic config **/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+
+
+.header-main, .background-P , .main-section , .footer-main{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.wrapper-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/** **/
+
+/** header main **/
+
+.header-main{
+
+    background-color: #0d0d0d;
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+    color: white;
+}
+/** **/
+
+
+/** section background **/
+
+.background-P{
+
+    color: white;
+    background-color: #020403;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.background-P .background__img{
+    width: 80vw;
+    min-height: 500px;
+    background-size: 100%;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-image: url(/Proyecto_progWeb/img/index-bacground.png);
+   
+}
+
+.font-color{
+    font-size: 40px;
+}
+
+.sub-title{
+    text-shadow: 2px 2px 10px black;
+}
+
+#buscador{
+    margin-top: 10px;
+    width:110%;
+    padding: 10px 0px;
+    border: 1px solid #0d0d0d ;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#buscador::placeholder{
+
+  color: #a18a96;
+  font-size: 1.2rem;
+  font-style: italic;
+    
+
+}
+
+
+
+
+/** **/
