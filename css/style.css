@@ -13,6 +13,10 @@ a:hover{
     text-decoration: underline;
 }
 
+.advertising,.header-main,.product-container,.footer-main{
+    font-family: 'Roboto', sans-serif;
+}
+
 /** advertising **/
 
 .advertising{
@@ -314,7 +318,7 @@ a:hover{
 
 }
 
-.btton{
+.product-container .btton{
     display: block;
     margin: 0px auto;
     border: 1px solid transparent;
@@ -406,12 +410,13 @@ a:hover{
     color: black;
   }
   
-  .social-media .item>a {
+  .social-media .item>a.social {
     width: inherit;
     height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
 
 /** **/
