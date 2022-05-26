@@ -315,8 +315,39 @@ a:hover{
 }
 
 .btton{
-    margin-left: 60px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid transparent;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    padding: calc(.665rem - 1px) calc(1.5rem - 1px);
+    border-radius: .25rem;
+    text-decoration: none;
+    transition: all 250ms;
+    width: auto;
+    cursor: pointer;
+    line-height: 1.25;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    background-color: rgba(40,106,255,.900);
 }
+
+.btton:hover,
+.btton:focus {
+  background-color: #b4ebff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btton:hover {
+  transform: translateY(-1px);
+}
+
+.btton:active {
+  background-color: rgba(40,106,255,.900);
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
 
 
 .card:hover .card__content{
