@@ -1,0 +1,532 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+
+
+
+.advertising,.header-main,.product-container,.footer-main{
+    font-family: 'Roboto', sans-serif;
+}
+
+/** advertising **/
+
+.advertising{
+    
+    padding: 10px 5px;
+    display: flex;  
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(232,91,40,.900);
+    color: #0E0C0a;
+}
+
+.advertising-title{
+    margin: 0px auto;
+    font-size: 17px;
+
+}
+
+.timer{
+    margin-left: auto;
+
+}
+
+.countDown{
+    display: flex;
+    justify-content: space-around;
+}
+
+.day,
+.hour,
+.minutes,
+.seconds{
+    font-size: 24px;
+}
+
+.advertising .timer .item{
+    padding: 10px;
+   
+}
+
+.advertising .close-container{
+    margin: 0px 15px;
+    padding: 0px 30px;
+}
+
+#close{
+    padding: 10px;
+    background-color: #FF2400;
+    border-radius: 5px;
+}
+
+/**  **/
+
+
+
+/** header main **/
+
+.header-main{
+    background-color: #0d0d0d;
+}
+
+.header-main .sub-header{
+    width: 98%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-container>a{
+    text-decoration:none;
+}
+
+.__logo{
+
+    font-size: 50px;
+}
+
+.header-main .sub-header .logo-container{
+
+    padding: 20px;  
+
+}
+
+.header-main .sub-header .lista-container{
+    padding: 10px;
+}
+
+.menu{
+    margin-left: 30px;
+}
+
+ .menu .lista .item{
+    position: relative;
+    transition: opacity 400ms ease-in-out;
+}
+
+
+.menu .lista .item:hover{
+    
+    color: #b4ebff;
+}
+
+#more:hover>.drop , #more:focus>.drop{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.item .drop{
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;  
+    position: absolute;
+    top:3.3rem;   
+    left: -34.9rem;
+    background-color:#0d0d0d;
+    width: 100vw;
+    min-height: 190px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.drop .lista-drop{
+ 
+    list-style: none;
+}
+
+.drop .lista-drop .item-drop{
+    padding: 0.5rem 1rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.item-drop:hover, .item-drop:focus{
+    background-color: #b4ebff;
+}
+
+.drop-title{
+    font-size: 35px;
+}
+
+
+.user{
+    margin-left: auto;
+}
+
+
+.user #cart{
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+
+}
+
+.user #cart:hover{
+
+    background-color: #222021;
+}
+
+.user .buscador{
+
+    border-radius: 30px;
+    outline: none;
+
+}
+
+.user #cart , .buscador, #button{
+
+    padding: calc(.500rem - 1px) calc(1.5rem - 1px);
+
+}
+
+
+.user .lista #button{
+    display: block;
+    border: 1px solid transparent;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    border-radius: .25rem;
+    text-decoration: none;
+    transition: all 250ms;
+    width: auto;
+    cursor: pointer;
+    line-height: 1.25;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+
+}
+
+.lista-container .lista{
+    display: flex;
+    list-style-type:none;
+}
+
+.lista-container .lista .item{
+    padding: 20px;
+}
+
+/**  **/
+
+
+/** Background index*/
+
+.background-index{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    min-height: 700px;
+}
+
+.background-index .imag{   
+    margin: auto 0px;
+    height: 650px;
+    width: 75%;
+    background:
+    linear-gradient(240deg,rgba(0, 0, 0, .900) 31% ,
+    rgba(228, 228, 228, .0) 10%) 
+    , url(/Proyecto_progWeb/img/index-bacground.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+ .container-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    margin-left: auto;
+    font-size: 36px;
+
+}
+
+
+.container-title .main-title , .sub-title{
+    color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+/**  **/
+
+
+/** Main section, productos*/
+.product-container{
+    background-color: #f2f2f2;
+}
+
+
+
+.__title{
+    font-size: 2.2rem;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+.courses-container{
+
+   
+    width: 80%;
+    padding: 100px 0px;
+    background-color: #ffff;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    row-gap: 100px;
+
+}
+
+
+.card {
+
+    position: relative;
+    width: 350px;
+    height: 280px;
+    color: #a18a96;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 15px 3px;
+
+
+}
+
+#C-progaming{
+    background: url(/Proyecto_progWeb/img//programacioncourse.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-unity{
+    background: url(/Proyecto_progWeb/img//Curso\ de\ unity.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-linux{
+    background: url(/Proyecto_progWeb/img/Curso_de_linux.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-photoshop{
+    background: url(/Proyecto_progWeb/img/Curso_de_Photoshop.jpg)
+    center no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#C-Csharp{
+    background: url(/Proyecto_progWeb/img/Curso_de_csharp.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+#C-javaScript{
+    background: url(/Proyecto_progWeb/img/Curso_javascript.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+#C-html_css{
+    background: url(/Proyecto_progWeb/img/Curso_html_css.png)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+
+#C-Css{
+    background: url(/Proyecto_progWeb/img/Curso_de_cssAvanzado.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+#C-unreal{
+    background: url(/Proyecto_progWeb/img/Curso_de_Unreal.jpg)
+    center no-repeat;
+    background-size:contain;
+    background-position: top;
+}
+
+
+
+.card__content{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: trasform .25s;
+}
+
+.card__content::before{
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #fff;
+}
+.card__title{
+    color: #6A515E;
+    line-height: 15px;
+}
+
+.card_subtitle{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    width: fit-content;
+    font-weight: 900;
+
+}
+
+.card_subtitle .discount{
+    text-decoration: line-through;
+    color: red;
+    padding-left: 15px;
+}
+
+.card__description{
+    font-size: 14px;
+    opacity: 0;
+    padding: 20px;
+    transition: opacity .5s;
+
+}
+
+.product-container .btton{
+    display: block;
+    margin: 0px auto;
+    border: 1px solid transparent;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    padding: calc(.665rem - 1px) calc(1.5rem - 1px);
+    border-radius: .25rem;
+    text-decoration: none;
+    transition: all 250ms;
+    width: auto;
+    cursor: pointer;
+    line-height: 1.25;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    background-color: rgba(40,106,255,.900);
+}
+
+.btton:hover,
+.btton:focus {
+  background-color: #b4ebff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btton:hover {
+  transform: translateY(-1px);
+}
+
+.btton:active {
+  background-color: rgba(40,106,255,.900);
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+.card:hover .card__content{
+    transform: translateY(0);
+
+}
+.card:hover .card__description{
+    opacity: 1;
+    transition-delay: .10s;
+}
+
+/** **/
+
+
+/** footer main **/
+
+.footer-main{
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d0d0d;
+}
+
+
+.footer-main .lista-footer{
+    color: white;
+    margin: 0px 10px;
+}
+
+.footer-main .lista-footer .lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-main .lista .item{
+    padding: 6px;
+    font-size: 14px;
+}
+
+
+.lista-footer .social-media{
+    display: flex;
+}
+
+.lista-footer .social-media .item {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: thin solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  .social-media .item>a.social {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+/** **/
