@@ -44,7 +44,7 @@ a:hover{
 .hour,
 .minutes,
 .seconds{
-    font-size: 19px;
+    font-size: 24px;
 }
 
 .advertising .timer .item{
@@ -57,7 +57,11 @@ a:hover{
     padding: 0px 30px;
 }
 
-
+#close{
+    padding: 10px;
+    background-color: #FF2400;
+    border-radius: 5px;
+}
 
 /**  **/
 
@@ -160,7 +164,7 @@ a:hover{
 
 /** Main section, productos*/
 .product-container{
-    background-color: gray;
+    background-color: #f2f2f2;
 }
 .courses-container{
 
@@ -334,10 +338,12 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #0d0d0d;
 }
 
 
 .footer-main .lista-footer{
+    color: white;
     margin: 0px 10px;
 }
 
@@ -366,6 +372,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
   }
   
   .social-media .item>a {
