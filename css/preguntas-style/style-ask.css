@@ -5,6 +5,8 @@
     margin: 0;
 }
 
+
+
 a, a:visited, a:active {
     text-decoration: none;
     color: inherit;
@@ -14,7 +16,6 @@ a, a:visited, a:active {
 
 .header-main, .background-P , .main-section , .footer-main{
     font-family: 'Roboto', sans-serif;
-
 }
 
 .wrapper-center{
@@ -29,12 +30,13 @@ a, a:visited, a:active {
 /** header main **/
 
 .header-main{
+    background-color: white;
+    color: black;
+}
 
-    background-color: #0d0d0d;
-    padding: 10px;
-    width: 100vw;
-    text-align: center;
-    color: white;
+.header-main .main-title{
+    text-align: left;
+    padding: 20px;
 }
 /** **/
 
@@ -44,20 +46,20 @@ a, a:visited, a:active {
 .background-P{
 
     color: white;
-    background-color: #020403;
+    background-color: #f7f8f2;
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 
 .background-P .background__img{
-    width: 80vw;
-    min-height: 500px;
-    background-size: 100%;
-    background-position: 10px;
+    margin: auto;
+    background-size: 70%;
+    background-position: center;
+    width:100%;
+    min-height: 700px;
     background-repeat: no-repeat;
-    background-image: url(/Proyecto_progWeb/img/index-bacground.png);
+    background-image: url(/Proyecto_progWeb/img/B_preguntas.jpg);
    
 }
 
@@ -89,9 +91,61 @@ a, a:visited, a:active {
     
 
 }
-
-
 /** **/
+
+ .main-section{
+    
+    background-color: #e5e2db;
+
+}
+
+
+
+ .main-section .wrapper__sections{
+    
+    background-color: #f5f5ed;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px 0px;
+
+    
+}
+
+.main-section .wrapper__sections .main-title{
+    padding: 20px;
+}
+
+
+
+.grid__responsive{
+     width: 90%;
+     display: grid;
+     margin: auto;
+     grid-template-columns: repeat( auto-fill, minmax(10rem,20rem) ); 
+     gap: 15px;     
+     justify-content: center;
+}  
+
+
+
+.__container-help{
+    text-align: center;
+    border: 1px solid;
+    padding: 20px;
+    margin: 5px;
+    transition: background-color 300ms ease-in-out;
+}
+
+.__container-help:hover , .__container-help:focus{
+
+    background-color: #00d3ff;
+
+}
+
+
+
+
+
 
 /** footer main**/
 .footer-main{
