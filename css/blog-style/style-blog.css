@@ -28,6 +28,8 @@ a, a:visited, a:active {
 .header-main{
     background-color: #0d0d0d;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .header-main .main-title{
