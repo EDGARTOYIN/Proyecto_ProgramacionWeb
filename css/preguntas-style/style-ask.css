@@ -104,16 +104,18 @@ a, a:visited, a:active {
 
 .main-section .wrapper__sections .main-title{
     padding: 20px;
+    text-align: center;
 }
 
 .grid__responsive{
      width: 90%;
      display: grid;
      margin: auto;
-     grid-template-columns: repeat( auto-fill, minmax(10rem,20rem) ); 
+     grid-template-columns: repeat(auto-fill, minmax(10rem,20rem) ); 
      gap: 15px;     
      justify-content: center;
 }  
+
 
 .__container-help{
     text-align: center;
@@ -121,6 +123,10 @@ a, a:visited, a:active {
     padding: 20px;
     margin: 5px;
     transition: background-color 300ms ease-in-out;
+}
+
+.__container-help .p_text{
+    font-size: 18px;
 }
 
 .__container-help:hover , .__container-help:focus{
