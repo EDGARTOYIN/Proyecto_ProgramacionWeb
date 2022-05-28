@@ -16,7 +16,7 @@
 ![imagen](https://user-images.githubusercontent.com/57578565/170811552-db5a9d34-9e85-4142-abdf-ab1a3d50fc5c.png)
 
 ## sitio publicado
-https://comfy-kataifi-591d75.netlify.app/
+https://whimsical-platypus-e14828.netlify.app/
 
 ## Documento del proyecto:
 [Proyecto de programacon web.pdf](https://github.com/EDGARTOYIN/Proyecto_ProgramacionWeb/files/8790593/Proyecto.de.programacon.web.pdf)
