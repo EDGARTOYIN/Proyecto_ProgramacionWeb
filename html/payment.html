@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Proyecto_progWeb/css/payment-style/style-payment__layout.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Proyecto_progWeb/css/payment-style/style-payment.css"
+    />
+    <title>Amala network</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header-main">
+        <div class="sub-header">
+          <div class="logo-container">
+            <a href="index.html"
+              ><h1 class="__logo"><i>Amala Network</i></h1></a
+            >
+          </div>
+
+          <nav class="lista-container menu">
+            <ul class="lista">
+              <li class="item"><a href="#">Courses</a></li>
+              <li id="more" class="item">
+                More
+                <div class="drop">
+                  <ul class="lista-drop">
+                    <li class="item-drop"><a href="index.html">Inicio</a></li>
+                    <li class="item-drop"><a href="#">Blog</a></li>
+                    <li class="item-drop"><a href="#">Ayuda</a></li>
+                    <li class="item-drop"><a href="#">Sobre Amala</a></li>
+                  </ul>
+                  <ul class="lista-drop">
+                    <li class="item-drop"><a href="#">Contacto</a></li>
+                    <li class="item-drop"><a href="#">Unete</a></li>
+                  </ul>
+                  <h1 class="drop-title">Welcome to Amala</h1>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <nav class="lista-container user">
+            <ul class="lista">
+              <li class="item">
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+              </li>
+              <li class="item"><input class="buscador" type="text" /></li>
+              <li class="item"><button id="button">Log in</button></li>
+              <li class="item"><button id="button">Sing up</button></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main-section">
+        <section class="sub-main">
+          <div class="details-container">
+            <div class="__sub-details">
+              <div class="course-img"></div>
+              <h3 class="title-course">Lorem</h3>
+              <h3 class="Price">
+                Price: <span class="price-course">200</span>
+              </h3>
+            </div>
+            <div class="info">
+              <h1>Total to pay <span class="total-price">300</span></h1>
+            </div>
+          </div>
+
+          <div class="container">
+            <form action="">
+              <div class="row">
+                <div class="col">
+                  <h3 class="title">Datos</h3>
+                  <div class="inputBox">
+                    <span>Nombre completo :</span>
+                    <input type="text" placeholder="Edgar Rebollo" />
+                  </div>
+                  <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Direccion :</span>
+                    <input type="text" placeholder="Direccion" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Ciudad :</span>
+                    <input type="text" placeholder="Mexicali" />
+                  </div>
+
+                  <div class="flex">
+                    <div class="inputBox">
+                      <span>Estado :</span>
+                      <input type="text" placeholder="Mexico" />
+                    </div>
+                    <div class="inputBox">
+                      <span>zip code :</span>
+                      <input type="text" placeholder="123" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <h3 class="title">payment</h3>
+                  <div class="inputBox">
+                    <span>Nombre en la tarjeta :</span>
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Numero de tarjeta :</span>
+                    <input type="number" placeholder="0000-000-00-00" />
+                  </div>
+
+                  <div class="flex">
+                    <div class="inputBox">
+                      <span>Vence:</span>
+                      <input type="number" placeholder="2022" />
+                    </div>
+                    <div class="inputBox">
+                      <span>CVV :</span>
+                      <input type="text" placeholder="1234" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <input
+                type="submit"
+                value="Proceder al pago"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-main">
+        <nav class="lista-footer">
+          <h3 class="title-lista">Atencion al cliente</h3>
+          <ul class="lista">
+            <li class="item">686-000-00</li>
+            <li class="item"><a href="#">Centro de ayuda</a></li>
+            <li class="item"><a href="#">Devolver un producto</a></li>
+            <li class="item"><a href="#">Privacidad y seguridad</a></li>
+          </ul>
+        </nav>
+        <nav class="lista-footer">
+          <h3 class="title-lista">Secciones</h3>
+          <ul class="lista">
+            <li class="item"><a href="#">Sobre Amala</a></li>
+            <li class="item"><a href="#">Cursos</a></li>
+          </ul>
+        </nav>
+        <nav class="lista-footer">
+          <h3 class="title-lista">Seccion de contacto</h3>
+          <ul class="social-media">
+            <li class="item">
+              <a class="social" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li class="item">
+              <a class="social" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li class="item">
+              <a class="social" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="item">
+              <a class="social" href="#"><i class="fa-brands fa-twitch"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

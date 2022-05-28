@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+
+
+
+.advertising,.header-main,.product-container,.footer-main{
+    font-family: 'Roboto', sans-serif;
+}
+
+/** header main **/
+
+.header-main{
+    background-color: #0d0d0d;
+}
+
+.header-main .sub-header{
+    width: 98%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-container>a{
+    text-decoration:none;
+}
+
+.__logo{
+
+    font-size: 50px;
+}
+
+.header-main .sub-header .logo-container{
+
+    padding: 20px;  
+
+}
+
+.header-main .sub-header .lista-container{
+    padding: 10px;
+}
+
+.menu{
+    margin-left: 30px;
+}
+
+ .menu .lista .item{
+    position: relative;
+    transition: opacity 400ms ease-in-out;
+}
+
+
+.menu .lista .item:hover{
+    
+    color: #b4ebff;
+}
+
+#more:hover>.drop , #more:focus>.drop{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.item .drop{
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;  
+    position: absolute;
+    top:3.3rem;   
+    left: -34.9rem;
+    background-color:#0d0d0d;
+    width: 100vw;
+    min-height: 190px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.drop .lista-drop{
+ 
+    list-style: none;
+}
+
+.drop .lista-drop .item-drop{
+    padding: 0.5rem 1rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.item-drop:hover, .item-drop:focus{
+    background-color: #b4ebff;
+}
+
+.drop-title{
+    font-size: 35px;
+}
+
+
+.user{
+    margin-left: auto;
+}
+
+
+.user #cart{
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+
+}
+
+.user #cart:hover{
+
+    background-color: #222021;
+}
+
+.user .buscador{
+
+    border-radius: 30px;
+    outline: none;
+
+}
+
+.user #cart , .buscador, #button{
+
+    padding: calc(.500rem - 1px) calc(1.5rem - 1px);
+
+}
+
+
+.user .lista #button{
+    display: block;
+    border: 1px solid transparent;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    border-radius: .25rem;
+    text-decoration: none;
+    transition: all 250ms;
+    width: auto;
+    cursor: pointer;
+    line-height: 1.25;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+
+}
+
+.lista-container .lista{
+    display: flex;
+    list-style-type:none;
+}
+
+.lista-container .lista .item{
+    padding: 20px;
+}
+
+/**  **/
+
+/** Main-section **/
+
+.main-section{
+    background-color: #f2f2f2;
+}
+
+.main-section .sub-main{
+    width: 85%;
+    background-color: #fff;
+    margin: 70px auto;
+    display: flex;
+    padding: 40px 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.sub-main .details-container{
+    width: 33%;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    height: 500px;
+    position: relative;
+}
+
+.__sub-details{
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info{
+    position: absolute;
+    bottom:0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.__sub-details .course-img{
+
+    width: 25%;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/Proyecto_progWeb/img/Curso_de_cssAvanzado.jpg);
+    border:1px solid;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    margin: 10px;
+  }
+  
+  .container form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  
+  .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .container form .row .col{
+    flex:1 1 250px;
+  }
+  
+  .container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .container form .row .col .inputBox{
+    margin:9px 0;
+  }
+  
+  .container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container form .row .col .inputBox input{
+    width: 70%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  
+  .container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #0a6ba2 ;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn:hover{
+    background: #44b5d5;
+  }
+
+
+/** **/
+
+
+
+/** footer main **/
+
+.footer-main{
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d0d0d;
+}
+
+
+.footer-main .lista-footer{
+    color: white;
+    margin: 0px 10px;
+}
+
+.footer-main .lista-footer .lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-main .lista .item{
+    padding: 6px;
+    font-size: 14px;
+}
+
+
+.lista-footer .social-media{
+    display: flex;
+}
+
+.lista-footer .social-media .item {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: thin solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  .social-media .item>a.social {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+/** **/
