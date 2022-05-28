@@ -94,6 +94,7 @@ a, a:visited, a:active {
 }
 
 .drop .lista-drop .item-drop{
+    display: block;
     padding: 0.5rem 1rem;
     transition: background-color 200ms ease-in-out;
 }
