@@ -52,7 +52,9 @@
             </div>
           </div>
         </div>
-        <div class="close-container" id="close"><span>X</span></div>
+        <button class="close-container" onclick="remove()">
+          <span>X</span>
+        </button>
       </header>
 
       <header class="header-main">
@@ -103,6 +105,9 @@
                   </table>
                   <a href="#" id="vaciar-carrito" class="button"
                     >Vaciar Carrito</a
+                  >
+                  <a href="/Proyecto_progWeb/html/payment.html" class="button"
+                    >Proceder al pago</a
                   >
                 </div>
               </li>
@@ -320,6 +325,12 @@
       </footer>
     </div>
 
+    <script>
+      function remove() {
+        const element = document.querySelector(".advertising");
+        element.remove();
+      }
+    </script>
     <script src="/Proyecto_progWeb/js/script_countD.js"></script>
     <script src="/Proyecto_progWeb/js/carrito.js"></script>
   </body>

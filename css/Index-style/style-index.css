@@ -58,13 +58,20 @@ a, a:visited, a:active {
 .advertising .close-container{
     margin: 0px 15px;
     padding: 0px 30px;
-}
-
-#close{
     padding: 10px;
     background-color: #FF2400;
     border-radius: 5px;
+    border: none;
+    transition: background-color 200ms ease-in;
 }
+
+.close-container:hover{
+    background-color: orangered;
+}
+    
+
+    
+
 
 /**  **/
 
@@ -238,7 +245,7 @@ td:last-child {
 }
 
 .button:hover{
-    background-color: rgba(241,245,244,.9);
+    background-color: rgba(252,217,97,.9);
 }
 
 
