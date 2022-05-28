@@ -118,7 +118,7 @@ a, a:visited, a:active {
     color: #b4ebff;
 }
 
-#more:hover>.drop , #more:focus>.drop{
+.more:hover>.drop , .more:focus>.drop{
     opacity: 1;
     visibility: visible;
 }
@@ -135,7 +135,7 @@ a, a:visited, a:active {
     background-color:#0d0d0d;
     width: 100vw;
     min-height: 190px;
-    z-index: 10;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -168,17 +168,79 @@ a, a:visited, a:active {
 }
 
 
-.user #cart{
+
+.user #icon-cart{
     font-size: 24px;
     cursor: pointer;
     transition: background-color 200ms ease-in;
 
 }
 
-.user #cart:hover{
-
+.user #icon-cart:hover{
     background-color: #222021;
 }
+
+
+.user .lista #item-carro{
+    position: relative;
+}
+
+.item .drop-carrito{
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;  
+    position: absolute;
+    top:100%;   
+    right: 1;
+    background-color:#0d0d0d;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;    
+    min-height: 190px;
+    z-index: 1;
+} 
+
+.more:hover>.drop-carrito , .more:focus>.drop-carrito{
+    opacity: 1;
+    visibility: visible;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.button{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid;
+    transition: background-color 200ms ease-in;
+}
+
+.button:hover{
+    background-color: rgba(241,245,244,.9);
+}
+
 
 .user .buscador{
 
@@ -187,7 +249,7 @@ a, a:visited, a:active {
 
 }
 
-.user #cart , .buscador, #button{
+.user #icon-cart , .buscador, #button{
 
     padding: calc(.500rem - 1px) calc(1.5rem - 1px);
 
@@ -310,69 +372,15 @@ a, a:visited, a:active {
 
 }
 
-#C-progaming{
-    background: url(/Proyecto_progWeb/img//programacioncourse.jpg)
-    center no-repeat;
-    background-size: contain;
-    background-position: top;
-}
+img{
 
-#C-unity{
-    background: url(/Proyecto_progWeb/img//Curso\ de\ unity.jpg)
-    center no-repeat;
-    background-size: contain;
-    background-position: top;
-}
+    width: 100%;
 
-#C-linux{
-    background: url(/Proyecto_progWeb/img/Curso_de_linux.jpg)
-    center no-repeat;
-    background-size: contain;
-    background-position: top;
-}
-
-#C-photoshop{
-    background: url(/Proyecto_progWeb/img/Curso_de_Photoshop.jpg)
-    center no-repeat;
-    background-size: contain;
-    background-position: top;
-}
-
-#C-Csharp{
-    background: url(/Proyecto_progWeb/img/Curso_de_csharp.jpg)
-    center no-repeat;
-    background-size:contain;
-    background-position: top;
-}
-
-#C-javaScript{
-    background: url(/Proyecto_progWeb/img/Curso_javascript.jpg)
-    center no-repeat;
-    background-size:contain;
-    background-position: top;
-}
-
-#C-html_css{
-    background: url(/Proyecto_progWeb/img/Curso_html_css.png)
-    center no-repeat;
-    background-size:contain;
-    background-position: top;
 }
 
 
-#C-Css{
-    background: url(/Proyecto_progWeb/img/Curso_de_cssAvanzado.jpg)
-    center no-repeat;
-    background-size:contain;
-    background-position: top;
-}
 
-#C-unreal{
-    background: url(/Proyecto_progWeb/img/Curso_de_Unreal.jpg)
-    center no-repeat;
-    background-size:contain;
-    background-position: top;
-}
+
 
 
 
